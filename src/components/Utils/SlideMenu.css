@@ -1,0 +1,52 @@
+.side-menu {
+    width: 250px; /* Ancho cuando está expandido */
+    height: 100%;
+    transition: width 0.1s ease;
+    background-color: #092C50; /* Azul oscuro similar al del logotipo */
+    color: #FFCC33; /* Texto en blanco para contrasteeee */
+    overflow-y: auto;
+    
+}
+.side-menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white; /* color del texto blanco */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+
+.side-menu.collapsed {
+    width: 60px; /* Ancho cuando está colapsado */
+}
+
+.toggle-menu-btn {
+    width: 100%;
+    background-color: #FFCC33; /* amarillo*/
+    border: none; /* Elimina borde */
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cursor en forma de mano jiji*/
+    color: #003366; /* texto*/
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para el botón al pasar el mouse por encima */
+.toggle-menu-btn:hover {
+    background-color: #E6B800; /* Un tono más oscuro para que de efecto hover */
+}
+  .slide-container {
+    position: fixed;
+    width: 250px;
+    top: 102px;
+    height: 100%; 
+    z-index: 100;
+  }
+  
+.side-menu ul li:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+}
+
+.side-menu ul li a {
+    transition: background-color 0.3s ease;
+}
+

@@ -1,0 +1,86 @@
+/* Estilos para la sección de visualización de reservas */
+.reportes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffffa7;
+  }
+  
+  .reportes-container h2 {
+    color: #092C50;
+    margin-bottom: 20px;
+  }
+  
+  .reportes-container input[type="text"] {
+    background-color: #ffffff;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #007bff;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .reportes-container button {
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .reportes-container button:hover {
+    background-color: #0056b3;
+  }
+  
+ /* Estilo para la tabla */
+ .reportes-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .reportes-container th, .reportes-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .reportes-container thead th {
+    background-color: #092C50;
+    color: white;
+  }
+  /* Estilo para mejorar la visualización de las filas */
+  .reportes-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .reportes-container tr:hover {
+    background-color: #ddd;
+  }
+  .reportes-container button {
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .reportes-container button:hover {
+    background-color: #0056b3;
+  }
+
+  
+  .reportes-container button.btn {
+    align-content: center;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  
+  /* Estilos para la imagen de botón (si aplica) */
+  .reportes-container .imagen-boton {
+    width: 15px;
+    height: 15px;
+  }

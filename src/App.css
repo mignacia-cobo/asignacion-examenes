@@ -1,0 +1,92 @@
+
+.app-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 15;
+  display: flex;
+  margin-bottom: 0px;
+  background-color: #fff;
+  color: #092C50;
+  padding: 25px;
+}
+
+.app-header img {
+  height: 50px;
+  margin-right: 4px;
+}
+
+.app-header-text {
+  flex-grow: 1; /* Ocupa el espacio restante */
+  display: flex; /* Usa flexbox */
+  justify-content: space-around; /* Alinea el contenido a la derecha */
+  align-items: center; /* Centra verticalmente el contenido */
+  text-align: center; /* Alinea el texto a la derecha */
+}
+
+.app-header h1 {
+  margin: 0; /* Elimina cualquier margen por defecto del h1 */
+}
+
+.app-nav {
+  position: fixed;
+  font-weight: bold;
+  top: 100px;
+  width: 100%;
+  z-index: 15; 
+  background-color: #092C50;
+  display: flex;
+  justify-content: space-around;
+  padding: 1px 0;
+  margin-bottom: 100px;
+}
+
+.app-container {
+  font-family: 'Arial', sans-serif;
+  margin-top: 60px; 
+  margin-bottom: 20px;
+}
+
+.app-nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.app-nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.app-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.app-nav a:hover {
+  background-color:  #87b6e9a9;
+  ;
+}
+.content-container {
+  flex-grow: 1; 
+  margin-top: 85px; 
+  margin-bottom: 60px;
+  /*margin-left: 250px;*/
+  
+}
+.main-container {
+  display: flex;
+  min-height: 100vh; 
+}
+/* Ajustar el margen izquierdo según el estado del menú */
+.main-container.menu-expanded .content-container {
+  margin-left: 250px; /* Ancho del menú expandido */
+}
+
+.main-container.menu-collapsed .content-container {
+  margin-left: 60px; /* Ancho del menú colapsado */
+}

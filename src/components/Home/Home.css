@@ -1,0 +1,63 @@
+.home-form {
+  font-family: 'Arial', sans-serif; /* Letra */
+  font-size: 12px; /* Tamaño de la letra */
+  background-color: #fff;
+  padding: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.image-container {
+  text-align: center; /* Centra la imagen horizontalmente */
+  margin-bottom: 20px; /* Espacio entre la imagen y el formulario */
+}
+
+  .image-container img {
+    max-width: 900px; /* Para ajustar el tamaño */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+.home-container {
+    font-family: 'Arial', sans-serif;
+    padding: 50px;
+  }
+  
+  .home-header {
+    background-color: #092C50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .home-nav {
+    background-color: #007bff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  .home-nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .home-nav li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  .home-nav a:hover {
+    background-color:  #87b6e9a9;
+    ;
+  }

@@ -1,0 +1,66 @@
+.carga-masiva-container {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  
+  /* Estilo del título */
+  .carga-masiva-container h1 {
+    color: #092C50;
+    text-align: center;
+  }
+  
+  /* Estilo para el input de carga de archivo */
+  .carga-masiva-container input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para la tabla */
+  .carga-masiva-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .carga-masiva-container th, .carga-masiva-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .carga-masiva-container thead th {
+    background-color: #092C50;
+    color: white;
+  }
+  
+  /* Estilo para mejorar la visualización de las filas */
+  .carga-masiva-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .carga-masiva-container tr:hover {
+    background-color: #ddd;
+  }
+  .carga-masiva-container button {
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carga-masiva-container button:hover {
+    background-color: #0056b3;
+  }
+
+  .carga-masiva-container button.btn {
+    align-content: center;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
