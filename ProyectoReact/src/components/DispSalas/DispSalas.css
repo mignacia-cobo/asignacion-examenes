@@ -1,0 +1,276 @@
+
+  /* Estilos para la sección de búsqueda */
+  .search-section {
+    width: 30%;
+    background-color: #eeeeeea7;
+    padding: 1px;
+    box-sizing: border-box;
+     
+  }
+  
+  .search-section h2 {
+    color: #092C50;
+    margin-bottom: 2px;
+  }
+  
+  .search-box {
+    margin-top: 1%;
+    margin-bottom: 5px;
+    flex-grow: 1;
+  }
+  
+  .search-box input[type="text"],
+  .search-box input[type="number"],
+  .search-box input[type="date"],
+  .search-box select,
+  .search-box select:focus {
+    background-color: #ffffff;
+    padding: 5px;
+    color: #092C50;
+    font-family: Arial, sans-serif;
+    font-size: small;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 1px solid #007bff;
+    margin-bottom: 4px;
+    width: 70%;
+  }
+  
+  .search-box button {
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .search-box table {
+    min-width: 300px;
+    font-size: x-small;
+  }
+
+  .search-box-table {
+    overflow-y: auto; /* Habilita el desplazamiento vertical si es necesario */
+    max-height: 300px;
+    max-width: 350px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .search-box table thead th {
+    border-bottom: 1.5px solid #007bff;
+    table-layout: fixed;
+  }
+
+  table thead th {
+    position: sticky;
+    font-size: small;
+    text-align: left;
+    top: 0;
+    background-color: #fff; /* Fondo blanco para que destaque */
+    z-index: 1; /* Asegura que la cabecera esté por encima de las celdas */
+  }
+
+  .search-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para la tabla de resultados de búsqueda */
+  .search-section table {
+    border-collapse: collapse;
+    transform: scale(1);/*reducir el porcentaje del tamaño de la tabla*/
+    min-width: 300px;
+    /*transform: scale(0.97);/*esto es para reducir el porcentaje del tamaño de la tabla*/
+  }
+  
+  .search-section table, 
+  .search-section table th, 
+  .search-section table td {
+    border: 1px solid #092C50;
+    background-color: #ffffff;
+  }
+  
+  .search-section table th,
+  .search-section table td {
+    text-align: left;
+    padding: 1px;
+    color: #092C50;
+  }
+  
+  .search-section table th {
+    background-color: #092C50;
+    color: white;
+  }
+
+  .search-section button {
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-section button:hover {
+    background-color: #0056b3;
+  }
+
+  .search-section button.imagenb { 
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .search-section button:hover.imagenb  {
+    background-color: #bed8f381;
+  }
+
+  .search-section button.imagen-seleccionada { 
+    .imagen-boton { 
+    background-color: #108b22ac;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    }
+  }
+
+  .imagen-boton {
+    width: 15px;
+    height: 15px;
+  }
+
+  /* Estilos para la sección de detalles */
+  .details-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-right: auto;
+    box-sizing: border-box;
+    flex-grow: 2;
+  }
+  
+  .details-section label {
+    margin-right: 30px;
+    font-weight: bold;
+    color: #092C50;
+  }
+  
+  .details-section select,
+  .details-section button {
+    margin-right: 10px;
+  }
+  
+  /* Estilos para la tabla de detalles de sala */
+  .details-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 3px;
+    color: #092C50;
+    font-size: small;
+  }
+  
+  .details-section table,
+  .details-section table th,
+  .details-section table td {
+    border: 0.5px solid #092C50;
+  }
+ 
+  .details-section table th,
+  .details-section table td {
+    text-align: center;
+    padding: 3px;
+  }
+  
+  .details-section table th {
+    background-color: #092C50;
+    color: white;
+  }
+  
+  /* Botones de cambio de semana */
+  .details-section button {
+    padding: 5px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .details-section button:hover {
+    background-color: #0056b3;
+  }
+
+  .details-section .boton-modulo-seleccionado {
+    background-color: #FFCC33; /* Color de fondo para botones de módulos seleccionados */
+    color: white; /* Color del texto */
+  }
+
+  .details-section .boton-modulo-seleccionado:hover {
+    background-color: #c48b1a; /* Color de fondo para botones de módulos seleccionados */
+    color: white; /* Color del texto */
+  }
+
+  /* Estilos para la tabla */
+.table-modulos {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table-modulos th, .table-modulos td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Estilos para las cabeceras de la tabla */
+.table-modulos thead th {
+  background-color: #092C50;
+  color: white;
+}
+
+/* Estilo específico para las subcolumnas de 'Módulo' */
+.table-modulos th.subcolumna, .table-modulos td.subcolumna {
+  border-right: none; /* Elimina el borde derecho para simular una única columna */
+}
+
+.table-modulos td.subcolumna:last-child {
+  border-right: 1px solid #ddd; /* agrega el borde derecho a la última subcolumna */
+}
+
+/* Estilos para la fila del encabezado de 'Módulo' */
+.table-modulos th[colspan="2"] {
+  text-align: center;
+}
+
+/* Opcionales: Estilo para mejorar la visualización de las filas */
+.table-modulos tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-modulos tr:hover {
+  background-color: #ddd;
+}
+
+.div-centrado {
+  width: 33%; /* para ajustar el ancho */
+  margin:  auto; /* Centra el div horizontalmente */
+  padding: 10px;
+}
+
+.titulo-disp-salas {
+  width: 100%;
+  text-align: left;
+  margin-right: 10px;
+  font-weight: bold;
+  background-color: #092C50; /* color de fondo*/
+  color: white;
+  position: fixed;
+  /*margin-top: 190;*/
+  z-index: 100; /* alto z-index */
+  padding: 9px 15px; /* ajustar el padding */
+}
+
+.disp-salas-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; /* Ajusta la alineación vertical */
+  margin-top: 45px; /* Ajustar */
+}

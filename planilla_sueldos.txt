@@ -1,2 +1,0 @@
-Maria Ignacia Cobo - QA - Sueldo Bruto: 1000000.0 - Desc. Salud: 70000.0 - Desc. AFP: 120000.0 - Líquido a pagar: 810000.0
-juan perez - kk - Sueldo Bruto: 10000.0 - Desc. Salud: 700.0000000000001 - Desc. AFP: 1200.0 - Líquido a pagar: 8100.0
