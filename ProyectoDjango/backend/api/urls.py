@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import SalaList
+from .views import ExamenListCreate, SalaListCreate
 
 urlpatterns = [
-    path('salas/', SalaList.as_view(), name='sala-list'),
+    path('examenes/', ExamenListCreate.as_view(), name='examenes-list-create'),
+    path('salas/', SalaListCreate.as_view(), name='salas-list-create'),
 ]
