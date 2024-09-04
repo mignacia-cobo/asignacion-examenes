@@ -18,3 +18,15 @@ class Sala(models.Model):
 
     def __str__(self):
         return f"{self.nombre_sala} - {self.codigo_sala}"
+
+from django.utils import timezone
+
+class Reserva(models.Model):
+    sala = models.ForeignKey(Sala, on_delete=models.CASCADE)
+    examen = models.ForeignKey(Examen, on_delete=models.CASCADE)
+    modulos = models.IntegerField()  # Representa la cantidad de módulos seleccionados para la reserva
+    fecha = models.DateField(default=timezone.now)  # Campo de fecha con valor predeterminado
+
+    def __str__(self):
+        return f"Reserva en {self.sala.nombre_sala} para {self.examen.asignatura} - {self.examen.evento} ({self.examen.seccion})"
+

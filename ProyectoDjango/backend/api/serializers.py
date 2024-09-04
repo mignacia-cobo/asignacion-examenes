@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Sala, Examen
+from .models import Sala, Examen, Reserva
 
 class SalaSerializer(serializers.ModelSerializer):
     class Meta:
@@ -9,4 +9,9 @@ class SalaSerializer(serializers.ModelSerializer):
 class ExamenSerializer(serializers.ModelSerializer):
     class Meta:
         model = Examen
-        fields = '__all__'  
+        fields = '__all__'
+
+class ReservaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Reserva
+        fields = '__all__'

@@ -1,14 +1,8 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .models import Sala, Examen
-from .serializers import SalaSerializer, ExamenSerializer
+from .models import Sala, Examen, Reserva
+from .serializers import SalaSerializer, ExamenSerializer, ReservaSerializer
 
-class SalaList(APIView):
-    def get(self, request):
-        salas = Sala.objects.all()
-        serializer = SalaSerializer(salas, many=True)
-        return Response(serializer.data)
-# Para buscar exámenes
 class ExamenListCreate(APIView):
     def get(self, request):
         queryset = Examen.objects.all()
@@ -26,7 +20,13 @@ class ExamenListCreate(APIView):
         serializer = ExamenSerializer(queryset, many=True)
         return Response(serializer.data)
 
-# Para buscar salas
+    def post(self, request):
+        serializer = ExamenSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=201)
+        return Response(serializer.errors, status=400)
+
 class SalaListCreate(APIView):
     def get(self, request):
         queryset = Sala.objects.all()
@@ -35,7 +35,7 @@ class SalaListCreate(APIView):
         edificio = request.GET.get('edificio')
         
         if codigo:
-            queryset = queryset.filter(id__icontains=codigo)
+            queryset = queryset.filter(codigo_sala__icontains=codigo)
         if nombre:
             queryset = queryset.filter(nombre_sala__icontains=nombre)
         if edificio:
@@ -44,3 +44,27 @@ class SalaListCreate(APIView):
         serializer = SalaSerializer(queryset, many=True)
         return Response(serializer.data)
 
+    def post(self, request):
+        serializer = SalaSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=201)
+        return Response(serializer.errors, status=400)
+
+class ReservaListCreate(APIView):
+    def get(self, request):
+        fecha = request.GET.get('fecha')
+        queryset = Reserva.objects.all()
+        
+        if fecha:
+            queryset = queryset.filter(fecha=fecha)
+
+        serializer = ReservaSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = ReservaSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=201)
+        return Response(serializer.errors, status=400)
